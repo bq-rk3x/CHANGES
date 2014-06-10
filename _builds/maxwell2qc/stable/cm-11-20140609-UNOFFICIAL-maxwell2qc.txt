@@ -1,0 +1,67 @@
+===================================
+Since Sun Jun  8 02:01:45 UTC 2014
+===================================
+
+   * bootable/recovery-cm/
+865ed4b screen_ui: Initialize text buffer
+12d3a20 restore minui support for paletted images with < 8 bits
+
+   * device/bq/rk3188-common/
+5a00ffd Add cm.updater.uri for OTA updates
+
+   * external/bluetooth/bluedroid/
+ef8eb8d bluedroid: increase uhid report buffer size for wiimote
+
+   * external/chromium_org/
+1b41849 reduce cookie tracking (1/4): add a way to count cookies
+
+   * frameworks/av/
+b53957a Fix memory leak when filtering commands in insertCommand_l()
+6b189e5 libstagefright: set frame packing from codec config
+5b724a6 libstagefright - Fix seek on audio having empty stss block
+b18c667 audio: Fixed condition to load AAC HW Encoder
+8ebcc8c NuPlayer: Fix ANR while resetting RTSP playback
+7b1354c audio:Avoid VideoLagUpdate if there is no AudioPlayer
+
+   * frameworks/base/
+72493c4 SystemUI: modify AOSP RU translation
+9bb3f67 appops: do not prune apps that are not present
+2927ef2 MtpDatabase JNI: Fixed a memory-leak in getObjectPropertyValue().
+ee70f52 framework: Add compass tile (1/2)
+21099d1 reduce cookie tracking (3/4): add a way to count cookies
+3d484b8 Use alpha channel instead of red in drawCachedGlyphBitmap
+6421bb1 Correct stride for drawing to cached glyph bitmap
+6c38cac SystemUI: prevent NPE on clear recents double press
+a9fa542 Merge branch 'qcril' of git://github.com/CyanogenMod/android_frameworks_base into cm-11.0
+93ce075 CameraTile: Launch default gallery app when long pressing active camera tile
+5026c28 inputdevices: update from aosp (master)
+aef4a12 base: remove extra checks
+
+   * frameworks/opt/telephony/
+2a545c6 Changing getPdus to use provided senderAddress to construct PDUs
+
+   * frameworks/webview/
+552470b reduce cookie tracking (2/4): add a way to count cookies
+
+   * packages/apps/Bluetooth/
+bbf4858 Use round() instead of ceil() in calculation of a2dp vol slider position
+
+   * packages/apps/Browser/
+8140d53 reduce cookie tracking (4/4): onResume deletion of cookies
+
+   * packages/apps/Dialer/
+aeca1fb Dialer: Update landscape layout to match 4.4.3 codebase
+
+   * packages/apps/InCallUI/
+7b86c36 InCallUI: Fix landscape layout
+
+   * packages/apps/Settings/
+c12b9bf Settings: modify AOSP RU translation
+a39d451 settings: FC on quick settings editor on tablets without a vibrator
+0b2816a Settings: Add compass tile (2/2)
+a607674 Settings: Move home answer & power end call options
+0097816 settings: performance: Update get current values in Processor view
+
+   * packages/providers/MediaProvider/
+14d4907 Deactivate the MiniThumbFile when it is not needed.
+3d7bf52 Clean up cursors in try/finally
