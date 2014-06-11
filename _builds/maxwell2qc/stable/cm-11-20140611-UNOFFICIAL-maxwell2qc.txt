@@ -1,0 +1,88 @@
+===================================
+Wed Jun 11 15:55:31 UTC 2014
+===================================
+
+   * bootable/recovery/
+bf2fb92 Fix flashing Rockchip MTD partitions
+4998303 Only chmod backup/blobs directory if it exists
+13651e2 Fixup nandroid-md5.sh with legitimate return code
+
+   * development/
+2d1ae9d development: Remove QuickSearchBox
+
+   * external/whispersystems/WhisperPush/
+a4d7271 WhisperPush: Create protected active session provider.
+
+   * frameworks/base/
+90a9b76 Revert "EncoderCapabilities: Adding HFR entry in EncoderCapabilities and JNI"
+b294068 Remove android_media suspend/resume/pause
+2849b3c Merge "QS: respect equalizer in switch to small tiles" into cm-11.0
+3ce2703 QS: respect equalizer in switch to small tiles
+edfb6f0 Merge "Themes: Check CRC of APK MANIFEST.MF at install" into cm-11.0
+09ae0ea Merge "GEL Integration (1/3)" into cm-11.0
+3b2b323 Theme special volumeup+down volume panel
+ec84f11 sync status bar transparency state on theme change
+cda10d0 Merge "synchronize updateStringCache on mAccessLock" into cm-11.0
+b117136 Themes: Check CRC of APK MANIFEST.MF at install
+87e7e16 Themes: Avoid compiling icon packs every boot
+5bfbc4b Themes: Check CRC of APK MANIFEST.MF at install
+ddea950 synchronize updateStringCache on mAccessLock
+ab5400b Merge "base: remove extra checks" into cm-11.0
+831179d Merge "inputdevices: update from aosp (master)" into cm-11.0
+
+   * hardware/libhardware_legacy/
+5e06c7b Audio: Add new format and property for PCM offload
+6fcc312 audio: Increased mute wait for USB Playback
+ade2977 audio: improve logging.
+
+   * hardware/qcom/audio-caf/
+421746b post_proc: fix post and pre process KW issues
+40bc78b post_proc: disable Bassboost and Virtualizer for USB_ACCESSORY
+e0ff6bd post_proc: improve logging
+31c859a hal: Fix teardown during back to back pause/play of WFD session
+824878c hal: improve logging.
+e75f0ce Audio: Enhance logging in AudioPolicyManager
+89171d7 hal: SSR support for pcm playback,pcm record usecases
+
+   * packages/apps/Camera2/
+d2dd920 Disable panorama mode
+b8eb2b7 Camera2: Fix AOSP mismerge
+
+   * packages/apps/Contacts/
+3304c83 Contacts: Add whisperpush indicator.
+
+   * packages/apps/Dialer/
+6605b62 Chinese Location Lookup [1/2] Dialer: Chinese Reverse Lookup
+
+   * packages/apps/InCallUI/
+117edc4 Hide Titlebar while loading InCallUI (2 of 2)
+7447da6 InCallUI: Improve latest CAF strings
+1ea5a36 Merge "InCallUI: Fix landscape layout" into cm-11.0
+
+   * packages/apps/Mms/
+c43573e Mms: disable SplitActionBar
+7d3c2b3 Hide "Insert smiley" if emoticons are disabled
+
+   * packages/apps/Settings/
+5d4005b Fix I/O scheduler for MTD partitions
+57a5d83 Settings: Remove lockscreen options from security.
+26ff273 Merge "Hide "Volume adjustment sound" option on non-voice capable devices" into cm-11.0
+c00f4cd Settings: Fix isPackageInstalled logic.
+8a1e89e Hide "Volume adjustment sound" option on non-voice capable devices
+9d472a5 Merge "settings: FC on quick settings editor on tablets without a vibrator" into cm-11.0
+
+   * packages/apps/Trebuchet/
+eebcb7d Update Icons  - Default home  - Themes icon
+3ac0f66 When CustomContent is enabled prevent it from displaying in OverView mode
+67f228a Include settings check for displaying SearchBar
+
+   * packages/providers/ThemesProvider/
+a519790 ThemesProvider: Fix query compilation error
+bbc1101 Merge "Insert instead of update if theme doesn't exist" into cm-11.0
+
+   * packages/services/Telephony/
+252c262 Chinese Location Lookup [2/2] Telephony: Detect external plugin.
+3e4ac25 Telephony: Improve latest CAF strings
+
+   * vendor/bq/
+ea4ac0c Update maxwell2plus blobs
