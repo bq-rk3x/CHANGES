@@ -1,0 +1,504 @@
+===================================
+Since Fri Jun  6 17:27:57 UTC 2014
+===================================
+
+   * bootable/recovery/
+1aa57bd Fix flashing Rockchip MTD partitions
+f5caec7 Enable cmdline nandroid backup of vold volumes
+dcd6350 Refresh nandroid progress without on-screen text
+1b687b5 enhance the progress thread update
+4998303 Only chmod backup/blobs directory if it exists
+13651e2 Fixup nandroid-md5.sh with legitimate return code
+
+   * bootable/recovery-cm/
+865ed4b screen_ui: Initialize text buffer
+12d3a20 restore minui support for paletted images with < 8 bits
+
+   * build/
+dc4c402 Fixed building incrementals when "no separate recovery" is specified.
+ab46c15 Generate extra userdata partition if needed
+
+   * development/
+7ead3d1 Merge "development: Update Calculator libs" into cm-11.0
+2d1ae9d development: Remove QuickSearchBox
+42e0f98 development: Update Calculator libs
+
+   * device/bq/curie2qc/
+4e8adbd Fix makefile
+b94fbb5 Use bq-rk3x kernel
+23caf0a Rename rockchip-common to rk3188-common
+2a0bd08 Cleanup BoardConfig
+f6f70d4 Move TARGET_KERNEL_SOURCE to device-common
+63febf1 Move frameworks overlay to device-common
+a259f75 Move sensors HAL to device-common
+d65ac0b Move BOARD_CUSTOM_GRAPHICS to device-common
+47bcb21 Fix AndroidProducts.mk
+bd3de0e Use common kernel path
+224896b Cleanup and organize libsensors
+
+   * device/bq/maxwell2/
+896606c Fix AndroidProducts.mk
+339e8c0 Cleanup and organize libsensors
+b9b0415 Change GPS permissions
+
+   * device/bq/rk3188-common/
+a38179e Fix derp in libsensors
+eb02771 Storage changes
+59280fa Fix conditionals in libsensors
+8b5cb37 Rename patches
+a78fe41 Clearer message to differentiate applied patches
+8b065ea Remove reverseDefaultRotation overlay
+78e7762 Rename rockchip-common to rk3188-common
+9630f44 Changes in Trebuchet overlay
+09e73d5 Add partitions to BoardConfigCommon
+4b998b4 Add common TARGET_KERNEL_SOURCE
+64d7e59 Add frameworks overlay
+4bb6148 Add sensors HAL
+8f36dc2 Call common vendor from device specific
+7e6aa99 Add BOARD_CUSTOM_GRAPHICS to device-common
+5a00ffd Add cm.updater.uri for OTA updates
+752b709 Enable BOARD_SENSOR_CALIBRATION
+1ad4342 Rename charger service
+ac5a452 Remove patch for BOARD_EGL_NEEDS_LEGACY_FB
+4badf74 Update config files
+
+   * external/bluetooth/bluedroid/
+ef8eb8d bluedroid: increase uhid report buffer size for wiimote
+
+   * external/chromium_org/
+1b41849 reduce cookie tracking (1/4): add a way to count cookies
+
+   * external/chromium_org/third_party/openssl/
+9c8b06b Cherrypick "OpenSSL: add CVE fixes from 1.0.1h"
+
+   * external/koush/Superuser/
+83eef8a Automatic translation import
+
+   * external/sepolicy/
+cbc3648 sepolicy: Fix a few denials when using backup service
+
+   * external/whispersystems/TextSecure/
+a29bde8 Skip phone number formatting if local number is null.
+
+   * external/whispersystems/WhisperPush/
+e46a39f Automatic translation import
+e4e12a8 Bypass session provider if not registered.
+a4d7271 WhisperPush: Create protected active session provider.
+7beec1d WhisperPush: Update strings.
+cc5a910 WhisperPush: Force unregister on IOError.
+
+   * frameworks/av/
+57b4f78 libstagefright: Fix app crash during pcm offload playback
+56d038e  libstagefright: Use channel count if channel mask is zero.
+706c1fa libstagefright: Fix incorrect comparison of mimetype
+9f2b414 audioflinger: Stop resetting compress offload streams
+b28d7d0 Smooth out AwesomePlayer
+81a29b2 stagefright: add ClockEstimator API and WindowedLinearFitEstimator
+e104a31 audio:Avoid AudioTrackThread if Track creation fails
+d9d828a av: QC AAC encoder supports 320KBps
+b53957a Fix memory leak when filtering commands in insertCommand_l()
+6b189e5 libstagefright: set frame packing from codec config
+5b724a6 libstagefright - Fix seek on audio having empty stss block
+b18c667 audio: Fixed condition to load AAC HW Encoder
+8ebcc8c NuPlayer: Fix ANR while resetting RTSP playback
+7b1354c audio:Avoid VideoLagUpdate if there is no AudioPlayer
+
+   * frameworks/base/
+9089ad8 Revert "EncoderCapabilities: Adding HFR entry in EncoderCapabilities and JNI"
+e2255f9 Remove android_media suspend/resume/pause
+01908ae Themes: Add categories to theme change intent.
+53dd837 Add the appropriate @hide flag so we can build!
+5289dca Fix compile time error with Protected Apps
+81ef983 Protected App [1/3]  PackageManager:    Add support for Protected App Components    Adding protect flag to ApplicationInfo
+8ea85bd Merge "Core: DE translation" into cm-11.0
+8ec2bdd Merge "listview: ensure active views are filled prior than scrap views" into cm-11.0
+522a814 Core: DE translation
+f5a4998 Themes: Don't kill launchers that handle the theme change
+0bf7a58 Themes: Don't set icons for iconpack that is applied.
+6072384 Merge "CM11 Themes: Add support for composed icons [1/2]" into cm-11.0
+dd1df7b hwui: Always enable the scissor while composing layer
+85f2e9d Merge "Fix can't change airplane mode from GlobalActions." into cm-11.0
+964b878 Automatic translation import
+830a002 listview: ensure active views are filled prior than scrap views
+3c0c8f1 Themes: PhoneWindowManager UI context on demand
+c6cbfea Framework: fix disable screen-off animation
+1c8275f Fix can't change airplane mode from GlobalActions.
+2849b3c Merge "QS: respect equalizer in switch to small tiles" into cm-11.0
+385e30d CM11 Themes: Add support for composed icons [1/2]
+3ce2703 QS: respect equalizer in switch to small tiles
+edfb6f0 Merge "Themes: Check CRC of APK MANIFEST.MF at install" into cm-11.0
+09ae0ea Merge "GEL Integration (1/3)" into cm-11.0
+3b2b323 Theme special volumeup+down volume panel
+ec84f11 sync status bar transparency state on theme change
+cda10d0 Merge "synchronize updateStringCache on mAccessLock" into cm-11.0
+b117136 Themes: Check CRC of APK MANIFEST.MF at install
+87e7e16 Themes: Avoid compiling icon packs every boot
+5bfbc4b Themes: Check CRC of APK MANIFEST.MF at install
+ddea950 synchronize updateStringCache on mAccessLock
+ab5400b Merge "base: remove extra checks" into cm-11.0
+831179d Merge "inputdevices: update from aosp (master)" into cm-11.0
+72493c4 SystemUI: modify AOSP RU translation
+9bb3f67 appops: do not prune apps that are not present
+2927ef2 MtpDatabase JNI: Fixed a memory-leak in getObjectPropertyValue().
+ee70f52 framework: Add compass tile (1/2)
+21099d1 reduce cookie tracking (3/4): add a way to count cookies
+3d484b8 Use alpha channel instead of red in drawCachedGlyphBitmap
+6421bb1 Correct stride for drawing to cached glyph bitmap
+6c38cac SystemUI: prevent NPE on clear recents double press
+a9fa542 Merge branch 'qcril' of git://github.com/CyanogenMod/android_frameworks_base into cm-11.0
+93ce075 CameraTile: Launch default gallery app when long pressing active camera tile
+5026c28 inputdevices: update from aosp (master)
+aef4a12 base: remove extra checks
+3027fcb GEL Integration (1/3)
+
+   * frameworks/opt/telephony/
+2a545c6 Changing getPdus to use provided senderAddress to construct PDUs
+700c321 Merge branch 'qcril' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-11.0
+
+   * frameworks/opt/telephony-msim/
+6919175 Merge branch 'qcril' of git://github.com/CyanogenMod/android_frameworks_opt_telephony-msim into cm-11.0
+
+   * frameworks/webview/
+552470b reduce cookie tracking (2/4): add a way to count cookies
+
+   * hardware/libhardware_legacy/
+5e06c7b Audio: Add new format and property for PCM offload
+6fcc312 audio: Increased mute wait for USB Playback
+ade2977 audio: improve logging.
+
+   * hardware/qcom/audio-caf/
+421746b post_proc: fix post and pre process KW issues
+40bc78b post_proc: disable Bassboost and Virtualizer for USB_ACCESSORY
+e0ff6bd post_proc: improve logging
+31c859a hal: Fix teardown during back to back pause/play of WFD session
+824878c hal: improve logging.
+e75f0ce Audio: Enhance logging in AudioPolicyManager
+89171d7 hal: SSR support for pcm playback,pcm record usecases
+
+   * kernel/bq/maxwell2/
+bca3c29 Fix camera orientation
+
+   * packages/apps/Apollo/
+80c068c Automatic translation import
+
+   * packages/apps/Bluetooth/
+e28ee49 CYAN-3419: Major cleanup of email over Bluetooth MAP -Removed MIME hardcoding passing through to MCE -Restructured email address formatting and handling to stop confusing MCE -Added phone book lookup of contact name
+bbf4858 Use round() instead of ceil() in calculation of a2dp vol slider position
+
+   * packages/apps/BluetoothExt/
+e6cd62b Automatic translation import
+
+   * packages/apps/Browser/
+ef55e5c Automatic translation import
+8140d53 reduce cookie tracking (4/4): onResume deletion of cookies
+
+   * packages/apps/CMAccount/
+c8ac97d CMAccount: fix hideThemeSwitch comparison logic
+efc0d9a Automatic translation import
+26f1fda CMAccount: offer to use WiFi to sign into Google Services
+
+   * packages/apps/CMFileManager/
+b954d08 Automatic translation import
+
+   * packages/apps/CMUpdater/
+0bcd884 Automatic translation import
+
+   * packages/apps/CMWallpapers/
+c13b78b Automatic translation import
+
+   * packages/apps/Calculator/
+2a2f584 Automatic translation import
+
+   * packages/apps/Calendar/
+c7ac8b2 Automatic translation import
+
+   * packages/apps/Camera2/
+bfcefb6 Disable panorama mode
+336e836 Automatic translation import
+b8eb2b7 Camera2: Fix AOSP mismerge
+
+   * packages/apps/Contacts/
+dd98afe Contacts: Add indicators to quickcontact fragment.
+da7b6cb Automatic translation import
+3304c83 Contacts: Add whisperpush indicator.
+
+   * packages/apps/ContactsCommon/
+906f357 Automatic translation import
+
+   * packages/apps/DSPManager/
+bc33ea4 Automatic translation import
+
+   * packages/apps/DeskClock/
+1815a97 Automatic translation import
+
+   * packages/apps/Dialer/
+2d9b539 Automatic translation import
+6605b62 Chinese Location Lookup [1/2] Dialer: Chinese Reverse Lookup
+1b93ca5 Hide shadow overlay for contact tiles with letter tile avatars
+aeca1fb Dialer: Update landscape layout to match 4.4.3 codebase
+f7f8e61 IMS-VT: Add IMS permission to the Dialer application.
+e6cb51d Merge "Fix jank in no favorites screen when showing/hiding dialpad DO NOT MERGE" into cm-11.0
+916d68c Fix jank in no favorites screen when showing/hiding dialpad DO NOT MERGE
+
+   * packages/apps/Email/
+075ca99 Automatic translation import
+
+   * packages/apps/Gallery2/
+edfbc05 Automatic translation import
+
+   * packages/apps/InCallUI/
+acce9b9 Merge "incallui: make navigation bar translucent + other fixes" into cm-11.0
+db22193 Automatic translation import
+f2cefde Fix mismerge
+9c32d37 incallui: make navigation bar translucent + other fixes
+117edc4 Hide Titlebar while loading InCallUI (2 of 2)
+7447da6 InCallUI: Improve latest CAF strings
+1ea5a36 Merge "InCallUI: Fix landscape layout" into cm-11.0
+40646c2 Replace deprecated string resources.
+7b86c36 InCallUI: Fix landscape layout
+1485c5a Merge branch 'qcril' of git://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-11.0
+
+   * packages/apps/LockClock/
+31e7209 Automatic translation import
+38b27f8 Fix Yahoo placefinder api call.
+
+   * packages/apps/Mms/
+95e8f76 Better QuickMessage layout for mdpi
+a19beb5 Automatic translation import
+c43573e Mms: disable SplitActionBar
+7d3c2b3 Hide "Insert smiley" if emoticons are disabled
+
+   * packages/apps/Settings/
+ed33079 IO Scheduler settings changes internal MTD partitions
+e056421 Settings : Fix CustomScreenColor when picking an image
+dfec74a Move protected apps strings to cm_strings
+fddc0d1 Merge "Protected App [2/3]  Protected Apps Settings -> Apps:  - Added Receiver which can send in a call to PackageManager to toggle a components protected status.  - Add Protected Apps activity (available from Apps fragment)  - Reads from ApplicationInfo state  - Requires Pattern Lock to view/modify protected apps  - Updates Settings Secure DB with protected components  - Support resetting protected apps pattern lock" into cm-11.0
+821bb0c Automatic translation import
+771820d Settings: Modify AOSP JA translation
+8000140 Protected App [2/3]  Protected Apps Settings -> Apps:  - Added Receiver which can send in a call to PackageManager to toggle a components protected status.  - Add Protected Apps activity (available from Apps fragment)  - Reads from ApplicationInfo state  - Requires Pattern Lock to view/modify protected apps  - Updates Settings Secure DB with protected components  - Support resetting protected apps pattern lock
+2913989 Settings : Launch only contacts picker for blacklist entry
+67c79fa Settings: Fix missing preference when lockscreen disabled.
+57a5d83 Settings: Remove lockscreen options from security.
+26ff273 Merge "Hide "Volume adjustment sound" option on non-voice capable devices" into cm-11.0
+c00f4cd Settings: Fix isPackageInstalled logic.
+8a1e89e Hide "Volume adjustment sound" option on non-voice capable devices
+9d472a5 Merge "settings: FC on quick settings editor on tablets without a vibrator" into cm-11.0
+c12b9bf Settings: modify AOSP RU translation
+a39d451 settings: FC on quick settings editor on tablets without a vibrator
+0b2816a Settings: Add compass tile (2/2)
+a607674 Settings: Move home answer & power end call options
+0097816 settings: performance: Update get current values in Processor view
+
+   * packages/apps/ThemeChooser/
+692820d Merge "Remove all icons in onPreExecute()" into cm-11.0
+57db107 Merge "CM11 Themes: Add support for composed icons [2/2]" into cm-11.0
+1dbe21c Automatic translation import
+0a91340 Remove all icons in onPreExecute()
+6d8f5fd CM11 Themes: Add support for composed icons [2/2]
+
+   * packages/apps/Torch/
+b4f53a0 Automatic translation import
+
+   * packages/apps/Trebuchet/
+62f05a1 Remove old preference activity
+4520d4c Merge "Use theme change categories and clear widget preview cache" into cm-11.0
+b52694e Use theme change categories and clear widget preview cache
+7fb166a Merge "Move Scrolling Wallpaper to new Trebuchet Settings" into cm-11.0
+087502d Trebuchet : Default workspace improvements
+7372001 Move Scrolling Wallpaper to new Trebuchet Settings
+8816c01 Fixed: Empty status for Protected Apps any other non-state settings  don't get cached view information from other settings.
+1f55bc4 Merge "Improve margins for all tablets" into cm-11.0
+c4b39db Merge "Handle theme changes" into cm-11.0
+44d1801 GEL Integration (2/2)
+9d9a1c0 Merge "Protected App [3/3]  Trebuchet - Protected Apps   - Build fixed to work with LOCAL_SDK_VERSION   - Fixed adding components to protected folders and adding protected folders to other folders   - Fixed issues with EditText for FolderName   - Adding support for Settings hooks   - Uses Setting's LockPattern for Protected Apps   - Add Read from Settings Secure DB (DO NOT WRITE!)   - Protecting a folder updates Launcher without restart   - Batch send component visibility" into cm-11.0
+25353da Improve margins for all tablets
+c284a57 Automatic translation import
+cf84500 Protected App [3/3]  Trebuchet - Protected Apps   - Build fixed to work with LOCAL_SDK_VERSION   - Fixed adding components to protected folders and adding protected folders to other folders   - Fixed issues with EditText for FolderName   - Adding support for Settings hooks   - Uses Setting's LockPattern for Protected Apps   - Add Read from Settings Secure DB (DO NOT WRITE!)   - Protecting a folder updates Launcher without restart   - Batch send component visibility
+401aafe Improve margins for small tablets
+64718d7 Handle theme changes
+eebcb7d Update Icons  - Default home  - Themes icon
+3ac0f66 When CustomContent is enabled prevent it from displaying in OverView mode
+67f228a Include settings check for displaying SearchBar
+256815a Fixed DynamicProfile for Live Settings support
+27d5c94 Fix issue where clings didn't appear after set up wizard (issue 13077829)
+953e082 use restored icon for restored app shortcuts
+db49408 update placeholder on package install or restore
+b4a3921 Add callback for "Widgets" button click in launcher
+7d06e57 handle shortcut restore for missing packages
+7073c92 Don't lose icons when migrating from different-sized hotseats.
+a6d9d86 Revert "Fix issue of extra blank screen after uninstall (issue 12372657)"
+08165ee Disabling cling when the user moves the folder before launching it. (Bug 12963868)
+d9c5eb0 Fix issue of extra blank screen after uninstall (issue 12372657)
+5a8139c Changed behaviour of the wallpaper picker.
+1a835b1 Guard against null default wallpaper
+a2f0094 Changed inconsistency when selecting default wallpaper, where it did not go back to home.
+7b64088 skip backup if launcher is in a bad state
+a47d38f Revert "Disabled the wallpaper when completely in -1 Now space."
+1d3bd19 Updating Read/Write settings permission protectionLevels. (Bug 11372484)
+c3ae579 Fixed visibility issue of save button in case the url loading failed
+f4018b0 Fix for Can't convert to dimension: type=0x12 Crash on JB deviecs.
+0f89422 Implement spring-loading of folders when dragging over.
+ae89bc5 Do updateWorkspaceScreenOrder inside a single transaction.
+ea73be5 Fix NPE in when dropping from all apps (issue 12917451)
+3f2ae36 Small refactor to separate adding workspace / all apps items
+dfdec45 Ensure we don't call getLayoutDirection() for devices not running JB MR1+. (Bug 12906355)
+8fd6faf Fix deprecated EMPTY_ARRAY usage (nanoprotos).
+4f79788 Do not show overview when menu pressed on CustomContent screen.
+62fef26 Missing paddingRight added.
+e1de81e Fix black flash during rotation of -1 screen with GEL.
+2985440 Fix bug: Scroll position reported incorrectly to live wallpapers
+1d9c281 Catch exceptions if Exif is malformed
+a62da2c Adding tighter first run checks for migration clings. (Bug 12626290)
+624700f Defend against missing DB during migration.
+e1940a6 Avoid NPE from delayed Runnable
+06fa60d Adding specific buckets for N5 in dynamic grid. (Bug 12604220)
+9862377 Dismissing search and other overlays when the menu button is pressed. (Bug 12524591)
+9698533 Disable Set Wallpaper button while loading image
+4aa39f0 Fix overlapping pages (issue 12551580)
+05725d8 Disabled the wallpaper when completely in -1 Now space.
+bdb1d94 Adding new bucket for inbetween phone-tablet layouts. (Bug 11993166)
+9a7a2ab Updating screen background assets. (Bug 12136457)
+0549bad Updating Tablet clings. (Bug 11973614)
+6a2f47b Migration update: ensuring all folders go first
+87d263e Lazy load the widget preview loader class
+00612ca Don't migrate shortcuts for components that no longer exist
+082b0f2 rationalize launcher backup logging
+179b5be Fix back button behavior for "App info" when launched by Launcher3.
+f094064 Tightening migration conditions. (Bug 11973614)
+69e918a Tightening migration conditions. (Bug 11973614)
+83785b2 Replace "hotseat" with "Favorites tray" in user visible strings.
+8480544 Revert "Workspace: Extra empty screen both left and right"
+0c33cc7 Remove settings in overview mode for Launcher3.
+d0a7b49 Fixing drop targets in phone / small tablet landscape (issue 12192781)
+e86ae75 Ensure that hasFirstRunActivity is only called when necessary
+676ede0 Keep selected wallpaper on configuration change.
+2390a70 search for a valid journal
+1d5ede1 Fix NPE in Workspace.onDropCompleted
+2762189 Properly saving migration cling keys.
+60f748d restore app favorites and screens
+03aec6c Fix longpress crash.
+bc4ea1c Add ability to center the crop (disabled)
+a0770b9 Increasing string length for translation (Bug 12524122)
+e0140fd hide launcher restore behind a flag.
+ae0a6cd Set App context from WallpaperChanged receiver. (Bug 12525684)
+5cef825 backup keys that might have slipped past
+261ddc3 Updating assets and text for migration cling. (Bug 11973614)
+8dbb043 Adding migration Clings. (Bug 11973614)
+086a901 New launcher2 icon migration algorithm.
+393ca28 Quick patch for b/12446428.
+ff307f9 Allow DISABLE_ALL_APPS to be set using a system property.
+f13fc61 Adding optional first run activity to Launcher
+222f36f better support for multiple files
+c33665c first backup should save things from the beginning of time
+3333d47 Recover when widget preview database is deleted
+444ea25 Move saved wallpaper images from cache directory to data directory
+1965e9e Moved paddingStart to -v17 folder.
+c551281 Accounting for new Package event extras when updating forward-locked apps. (Bug 11855584)
+7cc9766 KEYCODE_MENU: hide all apps when entering overview mode
+70b1a01 Remove a non-obvious fall through in a switch statement.
+5b52f72 Removed paddingStart and paddingEnd when they are the same.
+7c22086 Allow scrolling folders in when all apps is disabled.
+527793e Allow changing search bar hint in the cling on-the-fly
+ca0fb5e support multiple files and fix logcat smippets for launcher_protoutil
+d3bc6a0 Do not allow duplicate shortcuts when ALL_APPS is disabled.
+8fe545a Add auto-detection of payload type
+fb574ff Fix issue where deleting item from folder leaves extra page
+0e2292f Don't notifyPageSwitchListener until page settles (issue 12069757)
+d1006ea Update script to pull latest files from Gallery
+1510e01 Clean up imports
+aa05711 Create separate project for Wallpaper Picker
+1848546 Fix NPE from feedback (issue 12106858)
+c097192 Show widgets when ALL_APPS is disabled.
+db8e620 Move additional wallpaper picker files to special dir
+b1666a6 Don't load items which exceed the grid bounds
+f805d1c Fixing issue with Widget sizes being icorrectly reported.
+8ca776e Fix new NPE relating to reorder hints
+59a4fa6 Adjusting grid for tablets and fixing incorrect resources for large tablets.
+cd0377f expose the protoutil for launcher as an executable script
+d5ce881 Size hotseat data structure appropriately.
+05c27d4 Bind the workspace synchronously if started on -1 screen.
+cbb662e Move wallpaper picker code to a separate directory
+000704e Adding reorder hinting, hopefully will help with (issue 10654628)
+422308e Fixing crash in empty folders. (Bug 11627191)
+33832e2 Allow 5 hotseat icons in DISABLE_ALL_APPS mode.
+3ca339f Decrease delay for closing folder on removal of an item (issue 11028310)
+cda5a2d Fixing regression in drop target bar height. (Bug 11980757)
+d756744 Fix page jumping regression in overview mode (issue 12003672)
+46e672a Limit AllApps insets to certain device configurations. (Bug 11451335)
+72180f8 Retain current AllApps page if we never leave Launcher. (Bug 11468582)
+7b16687 Restoring Hotseat to the left-aligned in RTL. (Bug 11451335)
+fc51446 backup launcher preferences
+df2df99 Update suggested wallpaper dimensions in onResume
+708dd5f Add guards for restoreInstanceState (issue 11982812)
+9a63659 Only import workspaces for non-tablets (where grid hasn't changed)
+5ac8afb Fix NPE when going to All Apps in landscape
+e35719b Ensure we pass search bar bounds to GoogleSearch. (Bug 11968598)
+dd0f6a8 Modifying Workspace padding to account for Search Bar offsets. (Bug 11968598)
+5f5c4b7 Revert "Revert "Enable Launcher2 workspace import.""
+072bbd6 Add method to retrieve search box bounds.
+fd54273 Generalize support for 'App Info', 'Uninstall' and 'Delete'
+88eb58f Fix binding problem with no screens (issue 11768766)
+2a3aeaa Update custom content insets when Workspace insets are set
+35dc8fe De-parent custom content view before adding to custom content screen
+b00e639 Fix NPE in Launcher onDestroy
+10bab32 Fix NPE in case where workspace is null because Launcher has been destroyed
+449e6bb Revert "Enable Launcher2 workspace import."
+65f9981 Making workspace->overview transition smoother
+9b78d80 Enable Launcher2 workspace import.
+454c49e Add support for initiating a drag from an overlay.
+0426f95 Disable importing workspaces from Launcher2.
+8f97ff4 Update the database when converting the final screen. (Bug 11683562, Bug 11034205)
+25f7356 Initialize FastBitmapDrawable bounds with default bitmap dimensions.
+8c50bdf Allowing ability to pick up items / enter overview before full page settle
+384ca10 Syncing up state transition with paging transition
+a2f35d3 Updating LauncherModel filtering to use screen ids. (Bug 11685286)
+78fde70 Additional logs to track down missing workspace screen. (Bug 11683562)
+1be9f85 Adding logs to track down missing workspace screen. (Bug 11683562)
+5a329cc Bit of code cleanup (issue 11648206)
+ad0ff26 Fix for transparent CustomContent screen (issue 11549096)
+36d8262 Adding method to get the search bar bounds.
+2912b08 Require valid arrays when adding and binding new Apps. (Bug 11627095)
+57529fe Use the icon bounds for all calculations.
+
+   * packages/apps/VoicePlus/
+2b510cd Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+1ad58a5 Automatic translation import
+
+   * packages/providers/MediaProvider/
+14d4907 Deactivate the MiniThumbFile when it is not needed.
+3d7bf52 Clean up cursors in try/finally
+
+   * packages/providers/ThemesProvider/
+c85c5ae Automatic translation import
+a519790 ThemesProvider: Fix query compilation error
+bbc1101 Merge "Insert instead of update if theme doesn't exist" into cm-11.0
+a5e79ba Insert instead of update if theme doesn't exist
+
+   * packages/providers/UserDictionaryProvider/
+d195aa8 Automatic translation import
+
+   * packages/services/Telephony/
+c28065b Automatic translation import
+252c262 Chinese Location Lookup [2/2] Telephony: Detect external plugin.
+3e4ac25 Telephony: Improve latest CAF strings
+4fec6fc Merge branch 'qcril' of git://github.com/CyanogenMod/android_packages_services_Telephony into cm-11.0
+
+   * packages/wallpapers/Galaxy4/
+c084332 Automatic translation import
+
+   * packages/wallpapers/PhaseBeam/
+ff77109 Automatic translation import
+
+   * vendor/bq/
+b801d2b Fix makefile
+bc265e2 Rename rockchip-common to rk3188-common
+
+   * vendor/cm/
+a14a285 Merge "Added apn settings for Mobitel and Etisalat, Sri Lanka (MCC=413)" into cm-11.0
+ee17a7d Added apn settings for Mobitel and Etisalat, Sri Lanka (MCC=413)
+7d5d16d Build FFMPEG plugin for all targets
+8ebe62e Fix changelog typos
+74c92c6 Update changelog for M7
+
