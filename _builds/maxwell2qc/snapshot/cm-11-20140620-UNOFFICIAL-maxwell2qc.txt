@@ -1,0 +1,543 @@
+===================================
+Since Fri Jun 13 03:16:00 UTC 2014
+===================================
+
+   * android/
+476441b 4.4.3_r1.1 -> 4.4.4_r1
+81ee22d manifest: Add PhotoPhase repo
+05a0007 Add CMHome application.
+
+   * bootable/recovery/
+007a0d5 Fix flashing Rockchip MTD partitions
+e9a983d stop showing the background icon progress outside it's scope
+15b499b Progress thread: less aggressive redraw
+f5caec7 Enable cmdline nandroid backup of vold volumes
+
+   * bootable/recovery-cm/
+57bda54 add the functions for multi-stage packages to updater
+
+   * build/
+0c0b0c7 Merge tag 'android-4.4.4_r1' into HEAD
+6f3a103 ota: Let devices specify their own recovery-from-boot.p installer
+27aae42 "KTU84P"
+7f83b7c MR2.1 - Version 4.4.4.  Here we go!  DO NOT MERGE
+330bc33 colorize non-fatal javac stderr yellow (and actually display it... at all)
+
+   * cts/
+b8e2dab DO NOT MERGE Update for version bump
+6da2c75 CTS test for OpenSSL's early CCS issue (CVE-2014-0224)
+a3b762f Disable host side holotests also
+8e02f46 CTS report MUST not display raw performance numbers. bug:13347703
+510cfbc media: Refactor and improve robustness of AdaptivePlaybackTest
+e502d40 Fix a concurrency bug in OpenSSLHeartbleedTest.
+3a90060 hardware: consumerir: Increase test pattern length
+c070509 hardware: consumerir: Fix time discrepancy
+1856a4e CTS test for Heartbleed vulnerability in SSLSocket.
+
+   * device/bq/maxwell2qc/
+e609bc8 Remove deprecated mali files and options
+cace1db Change some properties
+7ca9f01 Changes in wifi
+8622850 Small changes in storage
+50f6b22 Add overlay for tethering
+5e67b1e No need to copy egl.cfg
+
+   * external/chromium_org/
+d9324e9 Merge tag 'android-4.4.4_r1' into HEAD
+76d1172 Backport "Recycle old V8 wrapper objects on navigations"
+afae5d8 Block access to java.lang.Object.getClass in injected Java objects
+
+   * external/chromium_org/third_party/WebKit/
+3fb1c1e Fix Java Bridge wrapper properties cleanup for multi-frame pages
+b13a6de Cherry-pick "Export WebCore::forgetV8ObjectForNPObject"
+
+   * external/chromium_org/third_party/openssl/
+e2f305e Cherrypick "OpenSSL: add CVE fixes from 1.0.1h"
+
+   * external/openssl/
+5c72597 Merge tag 'android-4.4.4_r1' into HEAD
+dd1da36 Fix Early CCS bug
+
+   * external/whispersystems/WhisperPush/
+f6ab030 WhisperPush: Don't query active session if token is null.
+
+   * frameworks/av/
+57b4f78 libstagefright: Fix app crash during pcm offload playback
+56d038e  libstagefright: Use channel count if channel mask is zero.
+706c1fa libstagefright: Fix incorrect comparison of mimetype
+9f2b414 audioflinger: Stop resetting compress offload streams
+b28d7d0 Smooth out AwesomePlayer
+81a29b2 stagefright: add ClockEstimator API and WindowedLinearFitEstimator
+e104a31 audio:Avoid AudioTrackThread if Track creation fails
+d9d828a av: QC AAC encoder supports 320KBps
+
+   * frameworks/base/
+2ab99e0 Revert "EncoderCapabilities: Adding HFR entry in EncoderCapabilities and JNI"
+cdb404c Remove android_media suspend/resume/pause
+a5ff4ed Merge tag 'android-4.4.4_r1' into HEAD
+00c1155 Add "Turn WiFi off" action to "Open networks" notification
+968d967 Merge "Revert "Vpn: Setup routes."" into cm-11.0
+5d2479d Revert "Vpn: Setup routes."
+cef811d Add previews to the themes contract.
+2c337f3 Merge "Install themes and icon packs for secondary users." into cm-11.0
+45a8399 Add status bar and navigation bar to ThemesContract
+7f56326 Remove DEFAULT_THEME_APPLIED_ON_FIRST_BOOT
+02d3615 Fix for default USB debugging in eng builds.
+63ade05 Add EventLog event for logging of attempts to call java.lang.Object.getClass
+fcd7b7d Remove lockscreen slide delay option (2/2)
+d0456e1 Merge "Don't create idmap if app doesn't have resources.arsc" into cm-11.0
+9cc9257 Install themes and icon packs for secondary users.
+ee4b66d Don't create idmap if app doesn't have resources.arsc
+4178a95 Fix icon support for secondary users.
+5fed217 Merge "Updating ActivityIntentResolver so that queryIntents doesn't return protected applications." into cm-11.0
+2d01de7 SystemUI: Update UserTile from Google 4.4 code
+cebde37 Merge "Themes: Set bounds on iconUpon" into cm-11.0
+6e783ad Updating ActivityIntentResolver so that queryIntents doesn't return protected applications.
+0ce4d00 Keyguard: Distinguish the TextView id of pinEntry
+44ad279 PackageManagerService: Prevent sending a SIGKILL while the device shutting down
+d3207b3 tests: Hide new private APIs
+2734a07 Themes: Set bounds on iconUpon
+4d80714 Merge "Themes: Get resources with an explicit theme attached." into cm-11.0
+5063890 Don't log an error if we cannot open icon hash
+d00e6f9 Themes: Get resources with an explicit theme attached.
+01908ae Themes: Add categories to theme change intent.
+
+   * frameworks/webview/
+b3af9e0 Merge tag 'android-4.4.4_r1' into HEAD
+7a7dce8 Sanitize selector Intent when handling intent: scheme.
+
+   * hardware/qcom/audio-caf/
+9dbe39e audio: Force route on HAL when USB headset is disconnected
+
+   * packages/apps/Apollo/
+715bd79 Apollo: Allow reading external storage
+
+   * packages/apps/CMAccount/
+c8ac97d CMAccount: fix hideThemeSwitch comparison logic
+
+   * packages/apps/CMHome/
+c352458 Remove launcher icon for now.
+ca6582c Change the background header to a different image.
+0edac1b Removed search capability from this application for now, so that Google search can be used instead by default. Added a proguard flag to include the com.android.launcher.home.Home interface from the api generated jar.
+da44335 Add missing resources from Jorge's original project. Change layout to remove empty cards. Add log tag to HomeStub. Add HomeLauncher that was missing from Jorge's public project."
+dee0a9d Change module references for Android.mk files so that the application will build using the Android build system.
+a32794a Add README.md
+
+   * packages/apps/CMUpdater/
+408d883 CMUpdater: update channels to reflect release structure
+
+   * packages/apps/Calculator/
+b3fceae Drop remnants of broken local locales
+
+   * packages/apps/Camera2/
+5d0bc93 Disable panorama mode
+
+   * packages/apps/InCallUI/
+5926aa2 InCallUI: ES translations (AOSP)
+acce9b9 Merge "incallui: make navigation bar translucent + other fixes" into cm-11.0
+
+   * packages/apps/Mms/
+0d076b9 Merge "Mms: Prevent popup window from closing" into cm-11.0
+95e8f76 Better QuickMessage layout for mdpi
+
+   * packages/apps/Settings/
+e93fb0b Fix I/O scheduler for MTD partitions
+efbafa5 Settings: Add gestures icons by Asher Simonds
+a6a19b1 Merge "Settings: remove 'Brightness adjustment' from auto brightness dialog" into cm-11.0
+c461a39 Settings: remove 'Brightness adjustment' from auto brightness dialog
+9ee0a74 Protected Apps:
+6c3bebd Settings: Fix Notification Drawer icons.
+528f8fb Merge "Settings: Remove V+ pref if V+ isn't present" into cm-11.0
+446cc4e Settings: Remove owner info from lockscreen options.
+844c835 Merge "Settings: Move Navigation buttons out of interface." into cm-11.0
+bb192eb Settings: Remove V+ pref if V+ isn't present
+49cdc50 Settings: Fix lockscreen security strings
+a2b5ff1 Settings: Move Navigation buttons out of interface.
+2a149e9 Remove 'More device settings' menu
+7ed4559 Cleanup lockscreen security settings
+d98a006 Remove lockscreen slide delay option (1/2)
+051bf97 Settings: Modify volume override summary for JA translation
+c33aa1b Integrate quite hours active period strings for JA translation
+c236fcd Settings: Modify & add AOSP JA translation
+e056421 Settings : Fix CustomScreenColor when picking an image
+dfec74a Move protected apps strings to cm_strings
+
+   * packages/apps/ThemeChooser/
+de76ae6 Call launchGetThemesWebView if ActivityNotFound.
+9fcd13f FUUUU Camels
+d45bad2 Add 'Get More' Menu option
+
+   * packages/apps/Trebuchet/
+0c0cc5d Adjust layout for readability in different languages
+26f5466 Fix layout issues in Trebuchet
+dfbfff1 Merge "Fix protected folder behavior" into cm-11.0
+40926c6 Fix protected folder behavior
+8ca6c2a Add a custom home screen to Trebuchet.
+56db21e trebuchet: custom home
+cf43a17 Revert font change support
+7b28680 Replace ugly Drawer setting (Sort Mode)
+0268e23 Trebuchet : Persist sorting mode
+5b2ed54 Trebuchet: don't crash when updating the "All apps" shortcut
+42c18d6 Revert "Trebuchet : Icon pack support"
+62f05a1 Remove old preference activity
+4520d4c Merge "Use theme change categories and clear widget preview cache" into cm-11.0
+b52694e Use theme change categories and clear widget preview cache
+7fb166a Merge "Move Scrolling Wallpaper to new Trebuchet Settings" into cm-11.0
+087502d Trebuchet : Default workspace improvements
+7372001 Move Scrolling Wallpaper to new Trebuchet Settings
+8816c01 Fixed: Empty status for Protected Apps any other non-state settings  don't get cached view information from other settings.
+
+   * packages/providers/ThemesProvider/
+c69e217 Make sure to update theme capabilities.
+
+   * packages/wallpapers/PhotoPhase/
+a017274 photophase: fix proguard flags
+cf31f45 Update license headers
+7f17458 Tweak layouts
+feb3740 Use the new google overflow button
+ba5a810 Notify data changed after return to albums view
+7848a1f Integration clean up
+b127080 Bump version (1.0.6)
+cdb3775 Handle back button on ChoosePictureFragment
+62c543c Reduce synchronized lines
+1651f35 Fix random disposition bug
+2e30304 Fix NPE from getActivity() call
+
+   * vendor/bq/
+bc6cc09 Remove performance blobs
+
+   * vendor/cm/
+e7b6b8c Add the CMHome application to common.mk
+5d7d0e5 Reverting last commit, pushed to head by accident.
+ee55f65 Add the CMHome application to the common_full makefile.
+
+===================================
+Since Wed Jun 11 15:55:31 UTC 2014
+===================================
+
+   * bootable/recovery/
+dcd6350 Refresh nandroid progress without on-screen text
+1b687b5 enhance the progress thread update
+
+   * development/
+7ead3d1 Merge "development: Update Calculator libs" into cm-11.0
+
+   * device/bq/maxwell2qc/
+a9f17ec Storage changes
+
+   * external/koush/Superuser/
+83eef8a Automatic translation import
+
+   * external/sepolicy/
+cbc3648 sepolicy: Fix a few denials when using backup service
+
+   * external/whispersystems/TextSecure/
+a29bde8 Skip phone number formatting if local number is null.
+
+   * external/whispersystems/WhisperPush/
+e46a39f Automatic translation import
+e4e12a8 Bypass session provider if not registered.
+
+   * frameworks/base/
+53dd837 Add the appropriate @hide flag so we can build!
+5289dca Fix compile time error with Protected Apps
+81ef983 Protected App [1/3]  PackageManager:    Add support for Protected App Components    Adding protect flag to ApplicationInfo
+8ea85bd Merge "Core: DE translation" into cm-11.0
+8ec2bdd Merge "listview: ensure active views are filled prior than scrap views" into cm-11.0
+522a814 Core: DE translation
+f5a4998 Themes: Don't kill launchers that handle the theme change
+0bf7a58 Themes: Don't set icons for iconpack that is applied.
+6072384 Merge "CM11 Themes: Add support for composed icons [1/2]" into cm-11.0
+dd1df7b hwui: Always enable the scissor while composing layer
+85f2e9d Merge "Fix can't change airplane mode from GlobalActions." into cm-11.0
+964b878 Automatic translation import
+830a002 listview: ensure active views are filled prior than scrap views
+3c0c8f1 Themes: PhoneWindowManager UI context on demand
+
+   * packages/apps/Apollo/
+80c068c Automatic translation import
+
+   * packages/apps/BluetoothExt/
+e6cd62b Automatic translation import
+
+   * packages/apps/Browser/
+ef55e5c Automatic translation import
+
+   * packages/apps/CMAccount/
+efc0d9a Automatic translation import
+
+   * packages/apps/CMFileManager/
+b954d08 Automatic translation import
+
+   * packages/apps/CMUpdater/
+0bcd884 Automatic translation import
+
+   * packages/apps/CMWallpapers/
+c13b78b Automatic translation import
+
+   * packages/apps/Calculator/
+2a2f584 Automatic translation import
+
+   * packages/apps/Calendar/
+c7ac8b2 Automatic translation import
+
+   * packages/apps/Camera2/
+336e836 Automatic translation import
+
+   * packages/apps/Contacts/
+dd98afe Contacts: Add indicators to quickcontact fragment.
+da7b6cb Automatic translation import
+
+   * packages/apps/ContactsCommon/
+906f357 Automatic translation import
+
+   * packages/apps/DSPManager/
+bc33ea4 Automatic translation import
+
+   * packages/apps/DeskClock/
+1815a97 Automatic translation import
+
+   * packages/apps/Dialer/
+2d9b539 Automatic translation import
+
+   * packages/apps/Email/
+075ca99 Automatic translation import
+
+   * packages/apps/Gallery2/
+edfbc05 Automatic translation import
+
+   * packages/apps/InCallUI/
+db22193 Automatic translation import
+f2cefde Fix mismerge
+
+   * packages/apps/LockClock/
+31e7209 Automatic translation import
+
+   * packages/apps/Mms/
+a19beb5 Automatic translation import
+
+   * packages/apps/Settings/
+fddc0d1 Merge "Protected App [2/3]  Protected Apps Settings -> Apps:  - Added Receiver which can send in a call to PackageManager to toggle a components protected status.  - Add Protected Apps activity (available from Apps fragment)  - Reads from ApplicationInfo state  - Requires Pattern Lock to view/modify protected apps  - Updates Settings Secure DB with protected components  - Support resetting protected apps pattern lock" into cm-11.0
+821bb0c Automatic translation import
+771820d Settings: Modify AOSP JA translation
+8000140 Protected App [2/3]  Protected Apps Settings -> Apps:  - Added Receiver which can send in a call to PackageManager to toggle a components protected status.  - Add Protected Apps activity (available from Apps fragment)  - Reads from ApplicationInfo state  - Requires Pattern Lock to view/modify protected apps  - Updates Settings Secure DB with protected components  - Support resetting protected apps pattern lock
+2913989 Settings : Launch only contacts picker for blacklist entry
+67c79fa Settings: Fix missing preference when lockscreen disabled.
+
+   * packages/apps/ThemeChooser/
+692820d Merge "Remove all icons in onPreExecute()" into cm-11.0
+57db107 Merge "CM11 Themes: Add support for composed icons [2/2]" into cm-11.0
+1dbe21c Automatic translation import
+
+   * packages/apps/Torch/
+b4f53a0 Automatic translation import
+
+   * packages/apps/Trebuchet/
+1f55bc4 Merge "Improve margins for all tablets" into cm-11.0
+c4b39db Merge "Handle theme changes" into cm-11.0
+44d1801 GEL Integration (2/2)
+9d9a1c0 Merge "Protected App [3/3]  Trebuchet - Protected Apps   - Build fixed to work with LOCAL_SDK_VERSION   - Fixed adding components to protected folders and adding protected folders to other folders   - Fixed issues with EditText for FolderName   - Adding support for Settings hooks   - Uses Setting's LockPattern for Protected Apps   - Add Read from Settings Secure DB (DO NOT WRITE!)   - Protecting a folder updates Launcher without restart   - Batch send component visibility" into cm-11.0
+25353da Improve margins for all tablets
+c284a57 Automatic translation import
+cf84500 Protected App [3/3]  Trebuchet - Protected Apps   - Build fixed to work with LOCAL_SDK_VERSION   - Fixed adding components to protected folders and adding protected folders to other folders   - Fixed issues with EditText for FolderName   - Adding support for Settings hooks   - Uses Setting's LockPattern for Protected Apps   - Add Read from Settings Secure DB (DO NOT WRITE!)   - Protecting a folder updates Launcher without restart   - Batch send component visibility
+401aafe Improve margins for small tablets
+
+   * packages/apps/VoicePlus/
+2b510cd Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+1ad58a5 Automatic translation import
+
+   * packages/providers/ThemesProvider/
+c85c5ae Automatic translation import
+
+   * packages/providers/UserDictionaryProvider/
+d195aa8 Automatic translation import
+
+   * packages/services/Telephony/
+c28065b Automatic translation import
+
+   * packages/wallpapers/Galaxy4/
+c084332 Automatic translation import
+
+   * packages/wallpapers/PhaseBeam/
+ff77109 Automatic translation import
+
+   * vendor/cm/
+a14a285 Merge "Added apn settings for Mobitel and Etisalat, Sri Lanka (MCC=413)" into cm-11.0
+
+===================================
+Since Mon Jun  9 09:10:47 UTC 2014
+===================================
+
+   * bootable/recovery/
+4998303 Only chmod backup/blobs directory if it exists
+13651e2 Fixup nandroid-md5.sh with legitimate return code
+
+   * development/
+2d1ae9d development: Remove QuickSearchBox
+
+   * external/whispersystems/WhisperPush/
+a4d7271 WhisperPush: Create protected active session provider.
+
+   * frameworks/base/
+c6cbfea Framework: fix disable screen-off animation
+1c8275f Fix can't change airplane mode from GlobalActions.
+2849b3c Merge "QS: respect equalizer in switch to small tiles" into cm-11.0
+385e30d CM11 Themes: Add support for composed icons [1/2]
+3ce2703 QS: respect equalizer in switch to small tiles
+edfb6f0 Merge "Themes: Check CRC of APK MANIFEST.MF at install" into cm-11.0
+09ae0ea Merge "GEL Integration (1/3)" into cm-11.0
+3b2b323 Theme special volumeup+down volume panel
+ec84f11 sync status bar transparency state on theme change
+cda10d0 Merge "synchronize updateStringCache on mAccessLock" into cm-11.0
+b117136 Themes: Check CRC of APK MANIFEST.MF at install
+87e7e16 Themes: Avoid compiling icon packs every boot
+5bfbc4b Themes: Check CRC of APK MANIFEST.MF at install
+ddea950 synchronize updateStringCache on mAccessLock
+ab5400b Merge "base: remove extra checks" into cm-11.0
+831179d Merge "inputdevices: update from aosp (master)" into cm-11.0
+
+   * hardware/libhardware_legacy/
+5e06c7b Audio: Add new format and property for PCM offload
+6fcc312 audio: Increased mute wait for USB Playback
+ade2977 audio: improve logging.
+
+   * hardware/qcom/audio-caf/
+c425eb4 audio: Close the file descriptor in error scenarios
+7d2f74d audio: Force route call on HAL during device disconnection
+421746b post_proc: fix post and pre process KW issues
+40bc78b post_proc: disable Bassboost and Virtualizer for USB_ACCESSORY
+e0ff6bd post_proc: improve logging
+31c859a hal: Fix teardown during back to back pause/play of WFD session
+824878c hal: improve logging.
+e75f0ce Audio: Enhance logging in AudioPolicyManager
+89171d7 hal: SSR support for pcm playback,pcm record usecases
+
+   * packages/apps/Bluetooth/
+e28ee49 CYAN-3419: Major cleanup of email over Bluetooth MAP -Removed MIME hardcoding passing through to MCE -Restructured email address formatting and handling to stop confusing MCE -Added phone book lookup of contact name
+
+   * packages/apps/Camera2/
+b8eb2b7 Camera2: Fix AOSP mismerge
+
+   * packages/apps/Contacts/
+3304c83 Contacts: Add whisperpush indicator.
+
+   * packages/apps/Dialer/
+6605b62 Chinese Location Lookup [1/2] Dialer: Chinese Reverse Lookup
+
+   * packages/apps/InCallUI/
+9c32d37 incallui: make navigation bar translucent + other fixes
+117edc4 Hide Titlebar while loading InCallUI (2 of 2)
+7447da6 InCallUI: Improve latest CAF strings
+1ea5a36 Merge "InCallUI: Fix landscape layout" into cm-11.0
+
+   * packages/apps/Mms/
+c43573e Mms: disable SplitActionBar
+7d3c2b3 Hide "Insert smiley" if emoticons are disabled
+
+   * packages/apps/Settings/
+57a5d83 Settings: Remove lockscreen options from security.
+26ff273 Merge "Hide "Volume adjustment sound" option on non-voice capable devices" into cm-11.0
+c00f4cd Settings: Fix isPackageInstalled logic.
+8a1e89e Hide "Volume adjustment sound" option on non-voice capable devices
+9d472a5 Merge "settings: FC on quick settings editor on tablets without a vibrator" into cm-11.0
+
+   * packages/apps/ThemeChooser/
+0a91340 Remove all icons in onPreExecute()
+6d8f5fd CM11 Themes: Add support for composed icons [2/2]
+
+   * packages/apps/Trebuchet/
+64718d7 Handle theme changes
+eebcb7d Update Icons  - Default home  - Themes icon
+3ac0f66 When CustomContent is enabled prevent it from displaying in OverView mode
+67f228a Include settings check for displaying SearchBar
+
+   * packages/providers/ThemesProvider/
+a519790 ThemesProvider: Fix query compilation error
+bbc1101 Merge "Insert instead of update if theme doesn't exist" into cm-11.0
+
+   * packages/services/Telephony/
+252c262 Chinese Location Lookup [2/2] Telephony: Detect external plugin.
+3e4ac25 Telephony: Improve latest CAF strings
+
+   * vendor/bq/
+ea4ac0c Update maxwell2plus blobs
+
+   * vendor/cm/
+ee17a7d Added apn settings for Mobitel and Etisalat, Sri Lanka (MCC=413)
+7d5d16d Build FFMPEG plugin for all targets
+
+===================================
+Since Sun Jun  8 02:01:45 UTC 2014
+===================================
+
+   * bootable/recovery-cm/
+865ed4b screen_ui: Initialize text buffer
+12d3a20 restore minui support for paletted images with < 8 bits
+
+   * development/
+42e0f98 development: Update Calculator libs
+
+   * external/bluetooth/bluedroid/
+ef8eb8d bluedroid: increase uhid report buffer size for wiimote
+
+   * external/chromium_org/
+1b41849 reduce cookie tracking (1/4): add a way to count cookies
+
+   * frameworks/av/
+b53957a Fix memory leak when filtering commands in insertCommand_l()
+6b189e5 libstagefright: set frame packing from codec config
+5b724a6 libstagefright - Fix seek on audio having empty stss block
+b18c667 audio: Fixed condition to load AAC HW Encoder
+8ebcc8c NuPlayer: Fix ANR while resetting RTSP playback
+7b1354c audio:Avoid VideoLagUpdate if there is no AudioPlayer
+
+   * frameworks/base/
+72493c4 SystemUI: modify AOSP RU translation
+9bb3f67 appops: do not prune apps that are not present
+2927ef2 MtpDatabase JNI: Fixed a memory-leak in getObjectPropertyValue().
+ee70f52 framework: Add compass tile (1/2)
+21099d1 reduce cookie tracking (3/4): add a way to count cookies
+3d484b8 Use alpha channel instead of red in drawCachedGlyphBitmap
+6421bb1 Correct stride for drawing to cached glyph bitmap
+6c38cac SystemUI: prevent NPE on clear recents double press
+a9fa542 Merge branch 'qcril' of git://github.com/CyanogenMod/android_frameworks_base into cm-11.0
+
+   * frameworks/opt/telephony/
+2a545c6 Changing getPdus to use provided senderAddress to construct PDUs
+
+   * frameworks/webview/
+552470b reduce cookie tracking (2/4): add a way to count cookies
+
+   * kernel/bq/maxwell2qc/
+78a7dda Change splash screen to bq logo
+
+   * packages/apps/Bluetooth/
+bbf4858 Use round() instead of ceil() in calculation of a2dp vol slider position
+
+   * packages/apps/Browser/
+8140d53 reduce cookie tracking (4/4): onResume deletion of cookies
+
+   * packages/apps/Dialer/
+1b93ca5 Hide shadow overlay for contact tiles with letter tile avatars
+aeca1fb Dialer: Update landscape layout to match 4.4.3 codebase
+
+   * packages/apps/InCallUI/
+40646c2 Replace deprecated string resources.
+7b86c36 InCallUI: Fix landscape layout
+
+   * packages/apps/Settings/
+c12b9bf Settings: modify AOSP RU translation
+a39d451 settings: FC on quick settings editor on tablets without a vibrator
+0b2816a Settings: Add compass tile (2/2)
+a607674 Settings: Move home answer & power end call options
+0097816 settings: performance: Update get current values in Processor view
+
+   * packages/providers/MediaProvider/
+14d4907 Deactivate the MiniThumbFile when it is not needed.
+3d7bf52 Clean up cursors in try/finally
+
+   * packages/providers/ThemesProvider/
+a5e79ba Insert instead of update if theme doesn't exist
+
